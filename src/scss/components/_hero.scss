@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  height: 400px;
+}
+
+.hero-title {
+  @include heading-l;
+  text-align: center;
+  font-size: 40px;
+}
+
+.hero-span {
+  border-bottom: 4px solid $color-green;
+}
+
+.hero-intro {
+  margin-top: 20px;
+  @include text-m;
+  text-align: center;
+  font-size: 16px;
+  line-height: calc(26 / 16);  
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn {
+  margin-top: 20px;
+}
+
+.hero-rings {
+  position: absolute;
+  left: -300px;
+  top: 0;
+}
+.hero-circle {
+  position: absolute;
+  right: -70px;
+  
+}

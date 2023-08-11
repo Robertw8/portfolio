@@ -1,0 +1,23 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.header {
+  padding-top: 40px;
+}
+
+.header-container {
+}
+
+.header-title {
+  text-align: center;
+  @include heading-m;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.socials-item {}

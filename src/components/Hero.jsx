@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { Link } from "./Button";
 
 export const Hero = () => {
 	return (
@@ -9,8 +9,8 @@ export const Hero = () => {
 					Hello there! I'm <span className='hero-span'>Arsenii.</span>
 				</h1>
 				<p className='hero-intro'>I develop web and mobile applications using React/React Native and Node.js</p>
-				<div className='hero-btn-wrapper'>
-					<Button className='hero-btn' typeAttr='button' text={"Contact me"} />
+				<div className='hero-link-wrapper'>
+					<Link className='hero-link' text={"Contact me"} />
 				</div>
 			</div>
 			<span className='hero-rings'>

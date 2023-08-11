@@ -1,0 +1,43 @@
+.skills {
+  position: relative;
+}
+
+.skills-container::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 10px;
+  
+      background-color: $color-white;
+}
+
+.skills-title {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+
+    background-color: $color-white;
+  }
+}
+
+.skills-list {
+  margin: 40px auto;
+}
+
+.skills-item {
+  @include heading-m;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.skills-rings {
+  position: absolute;
+  right: -300px;
+  bottom: 40px;
+}

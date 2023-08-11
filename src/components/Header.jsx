@@ -6,7 +6,13 @@ export const Header = () => {
 				<h2 className='header-title'>robertw8</h2>
 				<ul className='socials-list'>
 					<li className='socials-item'>
-						<a className='socials-link' href='https://github.com/Robertw8'>
+						<a
+							className='socials-link'
+							href='https://github.com/Robertw8'
+							target='_blank'
+							rel='noreferrer nofollow noopener'
+							aria-label='Open github'
+						>
 							<svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' className='socials-icon'>
 								<path
 									fill='#FFF'
@@ -17,7 +23,7 @@ export const Header = () => {
 						</a>
 					</li>
 					<li className='socials-item'>
-						<a className='socials-link' href='https://www.linkedin.com/in/arsenii-brovchuk/'>
+						<a className='socials-link' href='https://www.linkedin.com/in/arsenii-brovchuk/' aria-label='Open linkedin'>
 							<svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' className='socials-icon'>
 								<path
 									fill='#FFF'

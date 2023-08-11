@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "./Button";
+import { Link } from "./Link";
 
 export const Hero = () => {
 	return (

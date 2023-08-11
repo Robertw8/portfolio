@@ -1,0 +1,60 @@
+.projects {}
+
+.projects-container {}
+
+.projects-title {
+  &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 10px;
+  
+      background-color: $color-white;
+    }
+}
+
+.projects-list {
+  margin-top: 40px;
+}
+
+.projects-item {
+  box-shadow: 0 0 6px 3px rgba(255,255,255, .5);
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-info {
+  width: 100%;
+  padding: 10px;
+}
+
+.project-title {
+  @include heading-m;
+}
+
+.technologies-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.technologies-item {
+  @include text-m;
+}
+
+.project-links-wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.project-link {
+}
+

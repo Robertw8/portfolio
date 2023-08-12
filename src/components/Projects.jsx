@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "./Link";
 
 export const Projects = () => {
 	return (
@@ -24,12 +25,8 @@ export const Projects = () => {
 								<li className='technologies-item'>JavaScript</li>
 							</ul>
 							<div className='project-links-wrapper'>
-								<a href='' className='link-primary  project-link'>
-									View Project
-								</a>
-								<a href='' className='link-primary  project-link'>
-									View Code
-								</a>
+								<Link className='project-link' text='View Project' href='https://gladja.github.io/team-project/' />
+								<Link className='project-link' text='View Code' href='https://github.com/Robertw8/the-watch-spot' />
 							</div>
 						</div>
 					</li>
@@ -51,8 +48,8 @@ export const Projects = () => {
 								<li className='technologies-item'>JavaScript</li>
 							</ul>
 							<div className='project-links-wrapper'>
-								<a href='' className='link-primary  project-link'></a>
-								<a href='' className='link-primary  project-link'></a>
+								<Link className='project-link' text='View Project' href='https://robertw8.github.io/web-studio/' />
+								<Link className='project-link' text='View Project' href='https://github.com/Robertw8/web-studio' />
 							</div>
 						</div>
 					</li>

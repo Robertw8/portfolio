@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Link = ({ className, text }) => {
+export const Link = ({ className, text, href }) => {
 	return (
-		<a className={`link-primary ${className}`} target='_blank' rel='noopener norefferer nofollow'>
+		<a href={href} className={`link-primary ${className}`}>
 			{text}
 		</a>
 	);

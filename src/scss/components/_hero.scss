@@ -34,9 +34,11 @@
   position: absolute;
   left: -300px;
   top: 0;
+  pointer-events: none;
 }
+
 .hero-circle {
   position: absolute;
   right: -70px;
-  
+  pointer-events: none;
 }

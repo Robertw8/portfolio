@@ -10,7 +10,7 @@ export const Hero = () => {
 				</h1>
 				<p className='hero-intro'>I develop web and mobile applications using React/React Native and Node.js</p>
 				<div className='hero-link-wrapper'>
-					<Link className='hero-link' text={"Contact me"} />
+					<Link className='hero-link' text={"Contact me"} href='#contact' />
 				</div>
 			</div>
 			<span className='hero-rings'>

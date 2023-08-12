@@ -16,13 +16,24 @@
 
 .projects-list {
   margin-top: 40px;
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .projects-item {
-  box-shadow: 0 0 6px 3px rgba(255,255,255, .5);
+  width: 345px;
+  box-shadow: 0 0 4px 2px rgba(255,255,255, .5);
 
   &:not(:first-child) {
     margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
 }
 

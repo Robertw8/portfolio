@@ -6,11 +6,21 @@
 }
 
 .header-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header-title {
   text-align: center;
   @include heading-m;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 1;
+  }
 }
 
 .socials-list {
@@ -18,11 +28,24 @@
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.socials-icon {
+  fill: $color-white;
+  transition-duration: 300ms;
 }
 
 .socials-link {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover .socials-icon {
+    fill: $color-green;
+  }
 }

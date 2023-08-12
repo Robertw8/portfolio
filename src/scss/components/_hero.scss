@@ -1,16 +1,35 @@
 .hero {
   position: relative;
   height: 400px;
+
+  @media screen and (min-width: 768px) {
+    height: 800px;
+  }
 }
 
 .hero-title {
   @include heading-l;
   text-align: center;
   font-size: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 72px;
+    line-height: 1;
+    text-align: left;
+    margin-top: 90px;
+  }
+    @media screen and (min-width: 1080px) {
+      font-size: 88px;
+      margin-top: 130px;
+    }
 }
 
 .hero-span {
   border-bottom: 4px solid $color-green;
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 6px solid $color-green;
+  }
 }
 
 .hero-intro {
@@ -19,11 +38,23 @@
   text-align: center;
   font-size: 16px;
   line-height: calc(26 / 16);  
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    margin-top: 60px;
+    text-align: left;
+  }
 }
 
 .hero-link-wrapper {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    margin-top: 50px;
+  }
 }
 
 .hero-link {
@@ -35,10 +66,8 @@
   left: -300px;
   top: 0;
   pointer-events: none;
-}
 
-.hero-circle {
-  position: absolute;
-  right: -70px;
-  pointer-events: none;
+  @media screen and (min-width: 768px) {
+    top: 50px;
+  }
 }

@@ -16,7 +16,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.65.1",
-    "sweetalert2": "^11.7.22"
+    "sweetalert2": "^11.7.22",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

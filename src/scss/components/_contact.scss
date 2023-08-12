@@ -1,0 +1,60 @@
+.contact {
+  position: relative;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.contact-text {
+  @include text-m;
+  margin-top: 20px;
+}
+
+.contact-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  @include text-m;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $color-white;
+  background-color: transparent;
+  padding: 15px;
+  outline: none;
+  color: $color-white;
+  text-transform: uppercase;
+  transition-duration: 300ms;
+
+  &:focus {
+    border-color: $color-green;
+  }
+}
+
+.textarea {
+  margin-top: 30px;
+  resize: none;
+}
+
+.contact-btn {
+  align-self: flex-end;
+  margin-top: 30px;
+}
+
+.contact-rings {
+  position: absolute;
+  left: -350px;
+  top: 400px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.error {
+  @include text-m;
+  font-size: 14px;
+  color: $color-red;
+  margin-top: 10px;
+}

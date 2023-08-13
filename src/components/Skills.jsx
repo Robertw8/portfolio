@@ -3,47 +3,47 @@ import React from "react";
 const skills = [
 	{
 		name: "HTML/CSS",
-		icon: "./src/assets/images/sprite.svg#icon-html",
+		icon: "/src/assets/images/sprite.svg#icon-html",
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
 	},
 	{
 		name: "CSS",
-		icon: "./src/assets/images/sprite.svg#icon-css",
+		icon: "/src/assets/images/sprite.svg#icon-css",
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics",
 	},
 	{
 		name: "Sass",
-		icon: "./src/assets/images/sprite.svg#icon-sass",
+		icon: "/src/assets/images/sprite.svg#icon-sass",
 		link: "https://sass-lang.com/",
 	},
 	{
 		name: "JavaScript",
-		icon: "./src/assets/images/sprite.svg#icon-javascript",
+		icon: "/src/assets/images/sprite.svg#icon-javascript",
 		link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
 	},
 	{
 		name: "React",
-		icon: "./src/assets/images/sprite.svg#icon-react",
+		icon: "/src/assets/images/sprite.svg#icon-react",
 		link: "https://reactjs.org/",
 	},
 	{
 		name: "Redux",
-		icon: "./src/assets/images/sprite.svg#icon-redux",
+		icon: "/src/assets/images/sprite.svg#icon-redux",
 		link: "https://redux.js.org/",
 	},
 	{
 		name: "Node.js",
-		icon: "./src/assets/images/sprite.svg#icon-node",
+		icon: "/src/assets/images/sprite.svg#icon-node",
 		link: "https://nodejs.dev/en/",
 	},
 	{
 		name: "Git",
-		icon: "./src/assets/images/sprite.svg#icon-git",
+		icon: "/src/assets/images/sprite.svg#icon-git",
 		link: "https://git-scm.com/",
 	},
 	{
 		name: "Firebase",
-		icon: "./src/assets/images/sprite.svg#icon-firebase",
+		icon: "/src/assets/images/sprite.svg#icon-firebase",
 		link: "https://firebase.google.com/",
 	},
 ];

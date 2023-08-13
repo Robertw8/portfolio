@@ -1,115 +1,70 @@
 import React from "react";
 
+const skills = [
+	{
+		name: "HTML/CSS",
+		icon: "src/assets/images/sprite.svg#icon-html",
+		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+	},
+	{
+		name: "CSS",
+		icon: "src/assets/images/sprite.svg#icon-css",
+		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics",
+	},
+	{
+		name: "Sass",
+		icon: "src/assets/images/sprite.svg#icon-sass",
+		link: "https://sass-lang.com/",
+	},
+	{
+		name: "JavaScript",
+		icon: "src/assets/images/sprite.svg#icon-javascript",
+		link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
+	},
+	{
+		name: "React",
+		icon: "src/assets/images/sprite.svg#icon-react",
+		link: "https://reactjs.org/",
+	},
+	{
+		name: "Redux",
+		icon: "src/assets/images/sprite.svg#icon-redux",
+		link: "https://redux.js.org/",
+	},
+	{
+		name: "Node.js",
+		icon: "src/assets/images/sprite.svg#icon-node",
+		link: "https://nodejs.dev/en/",
+	},
+	{
+		name: "Git",
+		icon: "src/assets/images/sprite.svg#icon-git",
+		link: "https://git-scm.com/",
+	},
+	{
+		name: "Firebase",
+		icon: "src/assets/images/sprite.svg#icon-firebase",
+		link: "https://firebase.google.com/",
+	},
+];
+
 export const Skills = () => {
 	return (
 		<section className='section skills' id='skills'>
 			<div className='container skills-container'>
 				<h2 className='section-title skills-title'>Skills</h2>
 				<ul className='skills-list'>
-					<li className='skills-item'>
-						<a
-							href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-html'></use>
-							</svg>
-						</a>
-						<a
-							href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-css'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://sass-lang.com/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-sass'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://developer.mozilla.org/en-US/docs/Web/javascript'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-javascript'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://reactjs.org/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-react'></use>
-							</svg>
-						</a>
-						<a
-							href='https://redux.js.org/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-redux'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://nodejs.dev/en/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-node'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://git-scm.com/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-git'></use>
-							</svg>
-						</a>
-					</li>
-					<li className='skills-item'>
-						<a
-							href='https://firebase.google.com/'
-							className='icon-container'
-							target='_blank'
-							rel='noreferrer noopener nofollow'
-						>
-							<svg width='100%' height='100%' className='skills-icon'>
-								<use href='src/assets/images/sprite.svg#icon-firebase'></use>
-							</svg>
-						</a>
-					</li>
+					{skills.map((skill, index) => (
+						<li className='skills-item' key={index}>
+							<div className='skills-sep'>
+								<a href={skill.link} className='icon-container' target='_blank' rel='noreferrer noopener nofollow'>
+									<svg width='100%' height='100%' className='skills-icon'>
+										<use href={skill.icon}></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+					))}
 				</ul>
 			</div>
 			<span className='skills-rings'>
@@ -123,13 +78,6 @@ export const Skills = () => {
 					</g>
 				</svg>
 			</span>
-			{/* <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-				<path
-					fill='#242424'
-					fillOpacity='1'
-					d='M0,288L60,266.7C120,245,240,203,360,197.3C480,192,600,224,720,197.3C840,171,960,85,1080,85.3C1200,85,1320,171,1380,213.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
-				></path>
-			</svg> */}
 		</section>
 	);
 };

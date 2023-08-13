@@ -1,6 +1,7 @@
-.projects {}
-
-.projects-container {}
+.projects {
+  position: relative;
+  z-index: 1;
+}
 
 .projects-title {
   &::after {
@@ -17,7 +18,6 @@
 .projects-list {
   margin-top: 40px;
 
-
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 30px;
@@ -25,6 +25,7 @@
 }
 
 .projects-item {
+  background-color: $color-darkgrey;
   width: 100%;
   box-shadow: 0 0 4px 2px rgba(255,255,255, .5);
 
@@ -66,7 +67,3 @@
   display: flex;
   gap: 30px;
 }
-
-.project-link {
-}
-

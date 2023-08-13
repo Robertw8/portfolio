@@ -1,3 +1,5 @@
+@import "./variables";
+
 *,
 *::before,
 *::after {
@@ -19,4 +21,5 @@ button {
 
 a {
   text-decoration: none;
+  color: $color-white;
 }

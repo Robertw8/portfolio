@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: $color-black;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -47,25 +47,4 @@ body {
   @media screen and (min-width: 1080px) {
     font-size: 60px;
   }
-}
-
-.custom-shape-divider-bottom-1691809811 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1691809811 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 175px;
-}
-
-.custom-shape-divider-bottom-1691809811 .shape-fill {
-  fill: #FFFFFF;
 }

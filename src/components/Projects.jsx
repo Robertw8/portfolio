@@ -6,7 +6,7 @@ export const Projects = () => {
 	const projects = [
 		{
 			title: 'Team Project: "The Watch Spot" Landing page',
-			imageSrc: "/src/assets/images/projects/spot.jpg",
+			imageSrc: "/assets/images/projects/spot.jpg",
 			technologies: ["HTML/CSS", "JavaScript"],
 			projectLink: "https://gladja.github.io/team-project/",
 			codeLink: "https://github.com/Robertw8/the-watch-spot",

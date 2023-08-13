@@ -61,13 +61,3 @@
   margin-top: 20px;
 }
 
-.hero-rings {
-  position: absolute;
-  left: -300px;
-  top: 0;
-  pointer-events: none;
-
-  @media screen and (min-width: 768px) {
-    top: 50px;
-  }
-}

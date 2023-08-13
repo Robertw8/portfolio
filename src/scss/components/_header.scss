@@ -2,7 +2,30 @@
 @import "../common/variables";
 
 .header {
+  width: 100%;
   padding-top: 40px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 10;
+  background-color: transparent;
+  box-shadow: 1px 5px 5px 0px rgba(255, 255, 255, .5);
+  transition-duration: 150ms;
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
 }
 
 .header-container {
@@ -32,6 +55,11 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
+
+  @media screen and (max-width: 767px) {
+    gap: 10px;
+    margin-left: 0;
+  }
 }
 
 .socials-icon {
@@ -48,4 +76,17 @@
   &:hover .socials-icon {
     fill: $color-green;
   }
+}
+
+.header-column {
+  display: flex;
+  align-items: center;
+  
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.bg-darkgrey {
+  background-color: $color-black;
 }

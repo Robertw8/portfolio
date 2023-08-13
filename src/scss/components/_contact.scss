@@ -1,10 +1,22 @@
 .contact {
   position: relative;
   background-color: $color-darkgrey;
+
+
+}
+
+.contact-container {
+  @media screen and (min-width: 1080px) {
+    display: flex;
+  }
 }
 
 .contact-title {
   text-align: center;
+
+  @media screen and (min-width: 1080px) {
+      text-align: left;
+    }
 }
 
 .contact-text {
@@ -13,9 +25,14 @@
 }
 
 .contact-form {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 1080px) {
+    margin-left: 50px;
+  }
 }
 
 .contact-input {
@@ -45,12 +62,7 @@
   margin-top: 30px;
 }
 
-.contact-rings {
-  position: absolute;
-  left: -350px;
-  top: 400px;
-  pointer-events: none;
-}
+
 
 .error {
   @include text-m;

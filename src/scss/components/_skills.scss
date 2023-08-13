@@ -25,6 +25,10 @@
 }
 
 .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin: 40px auto;
 
   @media screen and (min-width: 768px) {
@@ -32,33 +36,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 120px;
-    row-gap: 50px;
+    gap: 60px;
   }
-}
-
-.skills-item {
-  @include heading-m;
-
-  &:not(:first-child) {
-    margin-top: 20px;
-
-    @media screen and (min-width: 768px) {
-      margin: 0;
-    }
-  }
-
-    @media screen and (min-width: 768px) {
-      
-      font-size: 32px;
-      line-height: 1;
-      letter-spacing: -1.5px;
-    }
-}
-
-.skills-rings {
-  position: absolute;
-  right: -300px;
-  bottom: 40px;
-  pointer-events: none;
 }

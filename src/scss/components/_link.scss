@@ -10,10 +10,13 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $color-green;
-  padding-bottom: 10px;
+  padding: 10px;
   transition-duration: 300ms;
 
   &:is(:hover, :focus) {
-    color: $color-green;
+        color: $color-green;
+        box-shadow: 0 0.5em 0.5em -0.4em $color-green;
+        transform: translateY(-0.25em);
+      }
   }
-}
+

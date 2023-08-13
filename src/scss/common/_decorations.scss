@@ -1,0 +1,43 @@
+
+
+.contact-rings {
+  position: absolute;
+  left: -350px;
+  top: 400px;
+  pointer-events: none;
+}
+
+.hero-rings {
+  position: absolute;
+  left: -300px;
+  top: 150px;
+  pointer-events: none;
+}
+
+.skills-rings {
+  position: absolute;
+  right: -300px;
+  bottom: 40px;
+  pointer-events: none;
+}
+
+.icon-container {
+  display: inline-block;
+  perspective: 1000px;
+  transition: transform 0.3s;
+}
+
+.skills-icon {
+  width: 72px;
+  height: 72px;
+  transition: transform 0.3s;
+}
+
+.icon-container:hover {
+  transform: rotateX(-20deg) rotateY(20deg);
+}
+
+.skills-icon:hover {
+  fill: #fff;
+  /* Змініть колір при наведенні, якщо необхідно */
+}

@@ -6,5 +6,5 @@ export default defineConfig({
 	optimizeDeps: {
 		exclude: ["js-big-decimal"],
 	},
-	base: "/https://github.com/Robertw8/portfolio.git/",
+	base: "/https://github.com/Robertw8/portfolio.git",
 });

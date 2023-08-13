@@ -28,7 +28,7 @@ export const Hero = () => {
 	});
 
 	return (
-		<section className='hero section bg-pan-left' id='hero'>
+		<section className='hero section' id='hero'>
 			<div className='container hero-container'>
 				<h1 className='hero-title'>
 					Hello there! I'm{" "}

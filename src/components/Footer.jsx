@@ -4,7 +4,9 @@ export const Footer = () => {
 	return (
 		<footer className='section footer'>
 			<div className='container footer-container'>
-				<h2 className='header-title footer-title'>robertw8</h2>
+				<h2 className='header-title footer-title'>
+					<a href='#hero'>robertw8</a>
+				</h2>
 				<ul className='socials-list'>
 					<li className='socials-item'>
 						<a

@@ -3,7 +3,7 @@ import { Link } from "./Link";
 
 export const Projects = () => {
 	return (
-		<section className='section projects'>
+		<section className='section projects' id='projects'>
 			<div className='container projects-container'>
 				<h2 className='section-title projects-title'>Projects</h2>
 				<ul className='projects-list'>

@@ -7,14 +7,10 @@ export const Hero = () => {
 
 	useEffect(() => {
 		const typed = new Typed(span.current, {
-			strings: ["Arsenii."],
-			typeSpeed: 100,
+			strings: ["I'm Arsenii."],
+			typeSpeed: 60,
 		});
-
-		return () => {
-			typed.destroy();
-		};
-	}, []);
+	});
 
 	const intro = useRef(null);
 
@@ -31,10 +27,7 @@ export const Hero = () => {
 		<section className='hero section' id='hero'>
 			<div className='container hero-container'>
 				<h1 className='hero-title'>
-					Hello there! I'm{" "}
-					<span className='hero-span' ref={span}>
-						Arsenii.
-					</span>
+					Hello there! <span className='hero-span' ref={span}></span>
 				</h1>
 				<p className='hero-intro' ref={intro}></p>
 				<div className='hero-link-wrapper'>

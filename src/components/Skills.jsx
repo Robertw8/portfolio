@@ -3,49 +3,49 @@ import React from "react";
 const skills = [
 	{
 		name: "HTML/CSS",
-		icon: "/images/sprite.svg#icon-html",
+		icon: "images/sprite.svg#icon-html",
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
 	},
 	{
 		name: "CSS",
-		icon: "/images/sprite.svg#icon-css",
+		icon: "images/sprite.svg#icon-css",
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics",
 	},
 	{
 		name: "Sass",
-		icon: "/images/sprite.svg#icon-sass",
+		icon: "images/sprite.svg#icon-sass",
 		link: "https://sass-lang.com/",
 	},
 	{
 		name: "JavaScript",
-		icon: "/images/sprite.svg#icon-javascript",
+		icon: "images/sprite.svg#icon-javascript",
 		link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
 	},
 	{
 		name: "React",
-		icon: "/images/sprite.svg#icon-react",
+		icon: "images/sprite.svg#icon-react",
 		link: "https://reactjs.org/",
 	},
 	{
 		name: "Redux",
-		icon: "/images/sprite.svg#icon-redux",
+		icon: "images/sprite.svg#icon-redux",
 		link: "https://redux.js.org/",
 	},
-	{
-		name: "Node.js",
-		icon: "/images/sprite.svg#icon-node",
-		link: "https://nodejs.dev/en/",
-	},
+	// {
+	// 	name: "Node.js",
+	// 	icon: "images/sprite.svg#icon-node",
+	// 	link: "https://nodejs.dev/en/",
+	// },
 	{
 		name: "Git",
-		icon: "/images/sprite.svg#icon-git",
+		icon: "images/sprite.svg#icon-git",
 		link: "https://git-scm.com/",
 	},
-	{
-		name: "Firebase",
-		icon: "/images/sprite.svg#icon-firebase",
-		link: "https://firebase.google.com/",
-	},
+	// {
+	// 	name: "Firebase",
+	// 	icon: "/images/sprite.svg#icon-firebase",
+	// 	link: "https://firebase.google.com/",
+	// },
 ];
 
 export const Skills = () => {

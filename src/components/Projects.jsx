@@ -6,14 +6,14 @@ export const Projects = () => {
 	const projects = [
 		{
 			title: 'Team Project: "The Watch Spot" Landing page',
-			imageSrc: "/images/projects/spot.jpg",
+			imageSrc: "./src/assets/images/projects/spot.jpg",
 			technologies: ["HTML/CSS", "JavaScript"],
 			projectLink: "https://gladja.github.io/team-project/",
 			codeLink: "https://github.com/Robertw8/the-watch-spot",
 		},
 		{
 			title: "Images Search using Pixabay API",
-			imageSrc: "../assets/images/projects/images.jpg",
+			imageSrc: "src/assets/images/projects/images.jpg",
 			technologies: ["HTML/CSS", "JavaScript", "REST API"],
 			projectLink: "https://robertw8.github.io/goit-js-hw-11/",
 			codeLink: "https://github.com/Robertw8/goit-js-hw-11",

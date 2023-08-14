@@ -3,6 +3,13 @@
   z-index: 1;
 }
 
+.projects-container {
+  @media screen and (max-width: 340px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .projects-title {
   &::after {
       content: "";
@@ -21,12 +28,18 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1080px) {
+    flex-wrap: nowrap;
   }
 }
 
 .projects-item {
   background-color: $color-darkgrey;
-  width: 100%;
+  width: 300px;
   box-shadow: 0 0 4px 2px rgba(255,255,255, .5);
 
   &:not(:first-child) {
@@ -66,4 +79,8 @@
   margin-top: 20px;
   display: flex;
   gap: 30px;
+}
+
+.project-link {
+  font-size: 14px;
 }

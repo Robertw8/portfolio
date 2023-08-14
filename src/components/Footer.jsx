@@ -24,7 +24,7 @@ export const Footer = () => {
 					<li className='socials-item'>
 						<a className='socials-link' href='https://www.linkedin.com/in/arsenii-brovchuk/' aria-label='Open linkedin'>
 							<svg className='socials-icon' width='25' height='24'>
-								<use xlinkHref='/images/sprite.svg#icon-linkedin'></use>
+								<use xlinkHref='public/images/sprite.svg#icon-linkedin'></use>
 							</svg>
 						</a>
 					</li>

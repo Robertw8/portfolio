@@ -32,9 +32,9 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1080px) {
-    flex-wrap: nowrap;
-  }
+  // @media screen and (min-width: 1080px) {
+  //   flex-wrap: nowrap;
+  // }
 }
 
 .projects-item {
@@ -51,8 +51,9 @@
     }
   }
 
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 980px) {
       margin: 0;
+      width: 40%;
   }
 }
 
@@ -68,6 +69,7 @@
 .project-title {
   @include heading-m;
   color: $color-grey;
+  max-width: 300px;
 }
 
 .technologies-list {
@@ -84,6 +86,7 @@
   margin-top: 20px;
   display: flex;
   gap: 30px;
+  height: 100%;
 
   @media screen and (max-width: 560px) {
     flex-wrap: wrap;

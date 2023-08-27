@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "./Link";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
@@ -12,7 +11,14 @@ export const Projects = () => {
 			codeLink: "https://github.com/Robertw8/the-watch-spot",
 		},
 		{
-			title: "Images Search using Pixabay API",
+			title: "Team Project: Tasty Treats",
+			imageSrc: "images/projects/treats.jpg",
+			technologies: ["HTML", "SCSS", "JavaScript", "REST API"],
+			projectLink: "https://robertw8.github.io/project-recipes/",
+			codeLink: "https://github.com/Robertw8/project-recipes",
+		},
+		{
+			title: "Images Search using REST API",
 			imageSrc: "images/projects/images.jpg",
 			technologies: ["HTML/CSS", "JavaScript", "REST API"],
 			projectLink: "https://robertw8.github.io/goit-js-hw-11/",

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "../Link";
+import { Link } from "../Link/Link";
 import Typed from "typed.js";
 
 import { HeroSection, Title, Span, Intro, LinkWrapper, HeroLink } from "./Hero.styled";

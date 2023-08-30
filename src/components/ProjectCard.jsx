@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "./Link";
+import { Link } from "./Link/Link";
 
 export const ProjectCard = ({ title, imageSrc, technologies, projectLink, codeLink }) => {
 	return (

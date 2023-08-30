@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactForm } from "../ContactForm";
+import { ContactForm } from "../ContactForm/ContactForm";
 import rings from "../../assets/images/pattern-rings.svg";
 
 import { ContactSection, Container, Title, ContactText } from "./Contact.styled";

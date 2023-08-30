@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "./Link";
+import { Link } from "../Link";
 import Typed from "typed.js";
+
+import { HeroSection, Title, Span, Intro, LinkWrapper, HeroLink } from "./Hero.styled";
 
 export const Hero = () => {
 	const span = useRef(null);
@@ -24,15 +26,15 @@ export const Hero = () => {
 	});
 
 	return (
-		<section className='hero section' id='hero'>
+		<HeroSection className='section' id='hero'>
 			<div className='container hero-container'>
-				<h1 className='hero-title'>
-					Hello there! <span className='hero-span' ref={span}></span>
-				</h1>
-				<p className='hero-intro' ref={intro}></p>
-				<div className='hero-link-wrapper'>
-					<Link className='hero-link' text={"Contact me"} href='#contact' />
-				</div>
+				<Title className='hero-title'>
+					Hello there! <Span className='hero-span' ref={span}></Span>
+				</Title>
+				<Intro className='hero-intro' ref={intro}></Intro>
+				<LinkWrapper className='hero-link-wrapper'>
+					<Link text={"Contact me"} href='#contact' />
+				</LinkWrapper>
 			</div>
 			<span className='hero-rings'>
 				<svg xmlns='http://www.w3.org/2000/svg' width='530' height='129'>
@@ -45,6 +47,6 @@ export const Hero = () => {
 					</g>
 				</svg>
 			</span>
-		</section>
+		</HeroSection>
 	);
 };

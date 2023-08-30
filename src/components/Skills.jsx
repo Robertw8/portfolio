@@ -1,34 +1,35 @@
 import React from "react";
+import sprite from "../assets/images/sprite.svg";
 
 const skills = [
 	{
 		name: "HTML/CSS",
-		icon: "images/sprite.svg#icon-html",
+		icon: `${sprite}#icon-html`,
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
 	},
 	{
 		name: "CSS",
-		icon: "images/sprite.svg#icon-css",
+		icon: `${sprite}#icon-css`,
 		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics",
 	},
 	{
 		name: "Sass",
-		icon: "images/sprite.svg#icon-sass",
+		icon: `${sprite}#icon-sass`,
 		link: "https://sass-lang.com/",
 	},
 	{
 		name: "JavaScript",
-		icon: "images/sprite.svg#icon-javascript",
+		icon: `${sprite}#icon-javascript`,
 		link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
 	},
 	{
 		name: "React",
-		icon: "images/sprite.svg#icon-react",
+		icon: `${sprite}#icon-react`,
 		link: "https://reactjs.org/",
 	},
 	{
 		name: "Redux",
-		icon: "images/sprite.svg#icon-redux",
+		icon: `${sprite}#icon-redux`,
 		link: "https://redux.js.org/",
 	},
 	// {
@@ -38,7 +39,7 @@ const skills = [
 	// },
 	{
 		name: "Git",
-		icon: "images/sprite.svg#icon-git",
+		icon: `${sprite}#icon-git`,
 		link: "https://git-scm.com/",
 	},
 	// {

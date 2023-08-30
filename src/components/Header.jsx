@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavBar } from "./NavBar";
+import sprite from "../assets/images/sprite.svg";
 
 export const Header = () => {
 	const [isScrolled, setScrolled] = useState(false);
@@ -39,7 +40,7 @@ export const Header = () => {
 								aria-label='Open github'
 							>
 								<svg className='socials-icon' width='25' height='24'>
-									<use xlinkHref='images/sprite.svg#icon-github'></use>
+									<use href={`${sprite}#icon-github`}></use>
 								</svg>
 							</a>
 						</li>
@@ -52,7 +53,7 @@ export const Header = () => {
 								aria-label='Open linkedin'
 							>
 								<svg className='socials-icon' width='25' height='24'>
-									<use xlinkHref='images/sprite.svg#icon-linkedin'></use>
+									<use href={`${sprite}#icon-linkedin`}></use>
 								</svg>
 							</a>
 						</li>

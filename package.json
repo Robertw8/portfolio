@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-particles": "^2.12.2",
     "sass": "^1.65.1",
+    "styled-components": "^6.0.7",
     "sweetalert2": "^11.7.22",
     "tsparticles": "^2.12.0",
     "typed.js": "^2.0.16"

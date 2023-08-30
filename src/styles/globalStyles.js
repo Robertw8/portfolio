@@ -25,11 +25,6 @@ const GlobalStyles = createGlobalStyle`
   color: #FFFFFF;
   }
 
-  @font-face {
-  font-family: "Space Grotesk";
-  src: url('/src/assets/fonts/SpaceGrotesk-Medium.ttf') format("truetype");
-  }
-
   html {
   overflow-x: hidden;
   scroll-behavior: smooth;

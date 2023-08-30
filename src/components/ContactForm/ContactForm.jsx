@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { successMessage } from "./SuccessMessage";
+import { successMessage } from "./successMessage";
 
 import { Form, Input, TextArea, SubmitButton } from "./ContactForm.styled";
 

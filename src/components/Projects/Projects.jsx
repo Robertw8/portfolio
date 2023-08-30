@@ -1,10 +1,10 @@
 import React from "react";
-import { ProjectCard } from "./ProjectCard/ProjectCard";
+import { ProjectCard } from "../ProjectCard/ProjectCard";
 
-import images from "../assets/images/projects/images.jpg";
-import spot from "../assets/images/projects/spot.jpg";
-import treats from "../assets/images/projects/treats.jpg";
-import webStudio from "../assets/images/projects/web-studio.jpg";
+import images from "../../assets/images/projects/images.jpg";
+import spot from "../../assets/images/projects/spot.jpg";
+import treats from "../../assets/images/projects/treats.jpg";
+import webStudio from "../../assets/images/projects/web-studio.jpg";
 
 export const Projects = () => {
 	const projects = [

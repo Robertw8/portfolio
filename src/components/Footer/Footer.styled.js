@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FooterSection = styled.footer`
-	padding-top: 40px;
+	padding-top: 0;
 	padding-bottom: 40px;
 	background-color: #242424;
 	position: relative;
@@ -27,7 +27,7 @@ const FooterSection = styled.footer`
 `;
 
 const FooterContainer = styled.div`
-	padding: 40px 16px 0 16px;
+	padding-top: 40px !important;
 	max-width: 375px;
 	margin: 0 auto;
 

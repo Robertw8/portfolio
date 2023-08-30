@@ -3,7 +3,7 @@ import styled from "styled-components";
 const PrimaryLink = styled.a`
 	font-family: "Space Grotesk", sans-serif;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: calc(26 / 16);
 	color: #ffffff;
 	text-transform: uppercase;

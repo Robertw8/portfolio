@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "./ProjectCard/ProjectCard";
 
 import images from "../assets/images/projects/images.jpg";
 import spot from "../assets/images/projects/spot.jpg";

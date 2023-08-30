@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "./Link/Link";
+import { Link } from "../Link/Link";
+import { NavList } from "./NavBar.styled";
 
 export const NavBar = () => {
 	return (
 		<nav className='nav-bar'>
-			<ul className='nav-list'>
+			<NavList className='nav-list'>
 				<li className='nav-item'>
 					<Link href='#skills' className='nav-link' text='Skills' />
 				</li>
@@ -14,7 +15,7 @@ export const NavBar = () => {
 				<li className='nav-item'>
 					<Link href='#contact' className='nav-link' text='Contact' />
 				</li>
-			</ul>
+			</NavList>
 		</nav>
 	);
 };

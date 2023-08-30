@@ -6,10 +6,10 @@ import { ContactSection, Container, Title, ContactText } from "./Contact.styled"
 
 export const Contact = () => {
 	return (
-		<ContactSection className='section' id='contact'>
-			<Container className='container'>
-				<div className='contact-column'>
-					<Title className='section-title'>Contact</Title>
+		<ContactSection id='contact'>
+			<Container>
+				<div>
+					<Title>Contact</Title>
 					<ContactText>
 						I would love to see any your project and how I could help or any other suggestions. Please fill in the form,
 						and I’ll get back to you as soon as possible.

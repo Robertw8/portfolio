@@ -4,16 +4,16 @@ import { NavList } from "./NavBar.styled";
 
 export const NavBar = () => {
 	return (
-		<nav className='nav-bar'>
-			<NavList className='nav-list'>
-				<li className='nav-item'>
-					<Link href='#skills' className='nav-link' text='Skills' />
+		<nav>
+			<NavList>
+				<li>
+					<Link href='#skills' text='Skills' />
 				</li>
-				<li className='nav-item'>
-					<Link href='#projects' className='nav-link' text='Projects' />
+				<li>
+					<Link href='#projects' text='Projects' />
 				</li>
-				<li className='nav-item'>
-					<Link href='#contact' className='nav-link' text='Contact' />
+				<li>
+					<Link href='#contact' text='Contact' />
 				</li>
 			</NavList>
 		</nav>

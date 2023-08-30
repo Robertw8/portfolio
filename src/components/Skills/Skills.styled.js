@@ -3,9 +3,31 @@ import styled from "styled-components";
 const SkillsSection = styled.section`
 	position: relative;
 	padding-top: 0;
+	padding-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@media screen and (min-width: 980px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 `;
 
 const SkillsContainer = styled.div`
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 700px;
+		padding: 0 32px;
+	}
+	@media screen and (min-width: 980px) {
+		max-width: 1110px;
+	}
+
 	&::after {
 		content: "";
 		display: block;
@@ -18,6 +40,22 @@ const SkillsContainer = styled.div`
 `;
 
 const Title = styled.h2`
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: calc(56 / 48);
+	color: #ffffff;
+	letter-spacing: -1.5px;
+
+	@media screen and (min-width: 768px) {
+		font-size: 48px;
+		line-height: 1;
+	}
+
+	@media screen and (min-width: 980px) {
+		font-size: 60px;
+	}
+
 	&::after {
 		content: "";
 		display: block;
@@ -56,7 +94,7 @@ const SkillsSeparation = styled.div`
 	padding: 10px;
 
 	&:hover {
-		box-shadow: 0 0 4px 2px $color-green;
+		box-shadow: 0 0 4px 2px #4ee1a0;
 	}
 	&:hover .icon-container {
 		transform: rotateY(360deg);

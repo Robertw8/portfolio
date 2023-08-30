@@ -13,7 +13,7 @@ const HeaderSection = styled.header`
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	z-index: 10;
-	background-color: transparent;
+	background-color: ${(props) => (props.$isScrolled ? "#151515" : "transparent")};
 	box-shadow: 1px 5px 5px 0px rgba(255, 255, 255, 0.5);
 	transition-duration: 150ms;
 
@@ -30,57 +30,20 @@ const HeaderSection = styled.header`
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 0 16px;
 
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-	}
-`;
-
-const Title = styled.h2`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: calc(32 / 24);
-	color: #ffffff;
-	text-align: center;
-
-	@media screen and (min-width: 768px) {
-		font-size: 32px;
-		line-height: 1;
-	}
-`;
-
-const SocialsList = styled.ul`
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	margin-top: 20px;
-
-	@media screen and (min-width: 768px) {
-		margin: 0;
+		max-width: 700px;
+		padding: 0 32px;
 	}
 
-	@media screen and (max-width: 767px) {
-		gap: 10px;
-		margin-left: 0;
-	}
-`;
-
-const SocialsIcon = styled.svg`
-	fill: #ffffff;
-	transition-duration: 300ms;
-`;
-
-const SocialsLink = styled.a`
-	padding: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	&:hover .socials-icon {
-		fill: #4ee1a0;
+	@media screen and (min-width: 980px) {
+		max-width: 1110px;
 	}
 `;
 
@@ -93,4 +56,4 @@ const Column = styled.div`
 	}
 `;
 
-export { HeaderSection, Container, Title, SocialsList, SocialsIcon, SocialsLink, Column };
+export { HeaderSection, Container, Column };

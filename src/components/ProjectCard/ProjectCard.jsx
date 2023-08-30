@@ -13,29 +13,20 @@ import {
 
 export const ProjectCard = ({ title, imageSrc, technologies, projectLink, codeLink }) => {
 	return (
-		<Card className='projects-item'>
-			<div className='image-thumb'>
-				<Image
-					src={imageSrc}
-					alt={`${title} preview`}
-					className='project-image'
-					width='350'
-					height='250'
-					loading='lazy'
-				/>
+		<Card>
+			<div>
+				<Image src={imageSrc} alt={`${title} preview`} width='350' height='250' loading='lazy' />
 			</div>
-			<Info className='project-info'>
-				<ProjectTitle className='project-title'>{title}</ProjectTitle>
-				<TechnologiesList className='technologies-list'>
+			<Info>
+				<ProjectTitle>{title}</ProjectTitle>
+				<TechnologiesList>
 					{technologies.map((tech, index) => (
-						<TechnologiesItem key={index} className='technologies-item'>
-							{tech}
-						</TechnologiesItem>
+						<TechnologiesItem key={index}>{tech}</TechnologiesItem>
 					))}
 				</TechnologiesList>
-				<LinksWrapper className='project-links-wrapper'>
-					<Link className='project-link' text='View Project' href={projectLink} />
-					<Link className='project-link' text='View Code' href={codeLink} />
+				<LinksWrapper>
+					<Link text='View Project' href={projectLink} />
+					<Link text='View Code' href={codeLink} />
 				</LinksWrapper>
 			</Info>
 		</Card>

@@ -3,10 +3,32 @@ import styled from "styled-components";
 const HeroSection = styled.section`
 	position: relative;
 	height: 400px;
+	padding-top: 40px;
 	padding-bottom: 0;
 
 	@media screen and (min-width: 768px) {
 		height: 800px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	@media screen and (min-width: 980px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+`;
+
+const Container = styled.div`
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 700px;
+		padding: 0 32px;
+	}
+	@media screen and (min-width: 980px) {
+		max-width: 1110px;
 	}
 `;
 
@@ -68,8 +90,8 @@ const LinkWrapper = styled.div`
 	}
 `;
 
-const HeroLink = styled.a`
-	margin-top: 20px;
-`;
+// const HeroLink = styled.a`
+// 	margin-top: 20px;
+// `;
 
-export { HeroSection, Title, Span, Intro, LinkWrapper, HeroLink };
+export { HeroSection, Container, Title, Span, Intro, LinkWrapper };

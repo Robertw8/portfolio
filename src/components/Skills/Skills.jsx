@@ -42,39 +42,29 @@ const skills = [
 		icon: `${sprite}#icon-redux`,
 		link: "https://redux.js.org/",
 	},
-	// {
-	// 	name: "Node.js",
-	// 	icon: "images/sprite.svg#icon-node",
-	// 	link: "https://nodejs.dev/en/",
-	// },
 	{
 		name: "Git",
 		icon: `${sprite}#icon-git`,
 		link: "https://git-scm.com/",
 	},
-	// {
-	// 	name: "Firebase",
-	// 	icon: "/images/sprite.svg#icon-firebase",
-	// 	link: "https://firebase.google.com/",
-	// },
 ];
 
 export const Skills = () => {
 	return (
-		<SkillsSection className='section skills' id='skills'>
-			<SkillsContainer className='container skills-container'>
-				<Title className='section-title skills-title'>Skills</Title>
-				<SkillsList className='skills-list'>
+		<SkillsSection id='skills'>
+			<SkillsContainer>
+				<Title>Skills</Title>
+				<SkillsList>
 					{skills.map((skill, index) => (
-						<li className='skills-item' key={index}>
-							<SkillsSeparation className='skills-sep'>
+						<li key={index}>
+							<SkillsSeparation>
 								<IconContainer
 									href={skill.link}
 									className='icon-container'
 									target='_blank'
 									rel='noreferrer noopener nofollow'
 								>
-									<Icon width='100%' height='100%' className='skills-icon'>
+									<Icon width='100%' height='100%'>
 										<use href={skill.icon}></use>
 									</Icon>
 								</IconContainer>

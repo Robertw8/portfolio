@@ -1,5 +1,15 @@
 import React from "react";
-import sprite from "../assets/images/sprite.svg";
+import sprite from "../../assets/images/sprite.svg";
+
+import {
+	SkillsSection,
+	SkillsContainer,
+	Title,
+	SkillsList,
+	SkillsSeparation,
+	IconContainer,
+	Icon,
+} from "./Skills.styled";
 
 const skills = [
 	{
@@ -51,23 +61,28 @@ const skills = [
 
 export const Skills = () => {
 	return (
-		<section className='section skills' id='skills'>
-			<div className='container skills-container'>
-				<h2 className='section-title skills-title'>Skills</h2>
-				<ul className='skills-list'>
+		<SkillsSection className='section skills' id='skills'>
+			<SkillsContainer className='container skills-container'>
+				<Title className='section-title skills-title'>Skills</Title>
+				<SkillsList className='skills-list'>
 					{skills.map((skill, index) => (
 						<li className='skills-item' key={index}>
-							<div className='skills-sep'>
-								<a href={skill.link} className='icon-container' target='_blank' rel='noreferrer noopener nofollow'>
-									<svg width='100%' height='100%' className='skills-icon'>
+							<SkillsSeparation className='skills-sep'>
+								<IconContainer
+									href={skill.link}
+									className='icon-container'
+									target='_blank'
+									rel='noreferrer noopener nofollow'
+								>
+									<Icon width='100%' height='100%' className='skills-icon'>
 										<use href={skill.icon}></use>
-									</svg>
-								</a>
-							</div>
+									</Icon>
+								</IconContainer>
+							</SkillsSeparation>
 						</li>
 					))}
-				</ul>
-			</div>
+				</SkillsList>
+			</SkillsContainer>
 			<span className='skills-rings'>
 				<svg xmlns='http://www.w3.org/2000/svg' width='530' height='129'>
 					<g fill='none' fillRule='evenodd' stroke='#FFF' opacity='.25'>
@@ -79,6 +94,6 @@ export const Skills = () => {
 					</g>
 				</svg>
 			</span>
-		</section>
+		</SkillsSection>
 	);
 };

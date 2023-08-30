@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { NavBar } from "./NavBar";
-import sprite from "../assets/images/sprite.svg";
+import { NavBar } from "../NavBar";
+import sprite from "../../assets/images/sprite.svg";
+
+import { HeaderSection, Container, Title, SocialsList, SocialsIcon, SocialsLink, Column } from "./Header.styled";
 
 export const Header = () => {
 	const [isScrolled, setScrolled] = useState(false);
@@ -21,45 +23,45 @@ export const Header = () => {
 	});
 
 	return (
-		<header className={`header ${isScrolled ? "bg-darkgrey" : ""}`}>
-			<div className='container header-container'>
-				<div className='header-column'>
-					<h2 className='header-title'>
+		<HeaderSection className={`${isScrolled ? "bg-darkgrey" : ""}`}>
+			<Container className='container header-container'>
+				<Column className='header-column'>
+					<Title className='header-title'>
 						<a href='#hero'>robertw8</a>
-					</h2>
+					</Title>
 					<NavBar />
-				</div>
+				</Column>
 				<div>
-					<ul className='socials-list'>
+					<SocialsList className='socials-list'>
 						<li className='socials-item'>
-							<a
+							<SocialsLink
 								className='socials-link'
 								href='https://github.com/Robertw8'
 								target='_blank'
 								rel='noreferrer nofollow noopener'
 								aria-label='Open github'
 							>
-								<svg className='socials-icon' width='25' height='24'>
+								<SocialsIcon className='socials-icon' width='25' height='24'>
 									<use href={`${sprite}#icon-github`}></use>
-								</svg>
-							</a>
+								</SocialsIcon>
+							</SocialsLink>
 						</li>
 						<li className='socials-item'>
-							<a
+							<SocialsLink
 								className='socials-link'
 								href='https://www.linkedin.com/in/arsenii-brovchuk/'
 								target='_blank'
 								rel='noreferrer nofollow noopener'
 								aria-label='Open linkedin'
 							>
-								<svg className='socials-icon' width='25' height='24'>
+								<SocialsIcon className='socials-icon' width='25' height='24'>
 									<use href={`${sprite}#icon-linkedin`}></use>
-								</svg>
-							</a>
+								</SocialsIcon>
+							</SocialsLink>
 						</li>
-					</ul>
+					</SocialsList>
 				</div>
-			</div>
-		</header>
+			</Container>
+		</HeaderSection>
 	);
 };

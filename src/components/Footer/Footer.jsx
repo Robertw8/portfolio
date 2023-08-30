@@ -1,10 +1,12 @@
 import React from "react";
-import sprite from "../assets/images/sprite.svg";
+import sprite from "../../assets/images/sprite.svg";
+
+import { FooterSection, FooterContainer } from "./Footer.styled";
 
 export const Footer = () => {
 	return (
-		<footer className='section footer'>
-			<div className='container footer-container'>
+		<FooterSection className='section'>
+			<FooterContainer className='container'>
 				<h2 className='header-title footer-title'>
 					<a href='#hero'>robertw8</a>
 				</h2>
@@ -30,7 +32,7 @@ export const Footer = () => {
 						</a>
 					</li>
 				</ul>
-			</div>
-		</footer>
+			</FooterContainer>
+		</FooterSection>
 	);
 };

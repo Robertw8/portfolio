@@ -16,11 +16,11 @@ const options = {
 			value: "#ffffff",
 		},
 		links: {
-			color: "random",
+			color: "#ffffff",
 			distance: 150,
-			enable: false,
+			enable: true,
 			opacity: 0.5,
-			width: 1,
+			width: 0.1,
 		},
 		move: {
 			bounce: false,
@@ -33,7 +33,7 @@ const options = {
 				top: "out",
 			},
 			random: true,
-			speed: 2,
+			speed: 1,
 			straight: false,
 		},
 		number: {

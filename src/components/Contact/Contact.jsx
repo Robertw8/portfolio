@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactForm } from "../ContactForm/ContactForm";
-import rings from "../../assets/images/pattern-rings.svg";
+import { Rings } from "../Rings/Rings";
 
 import { ContactSection, Container, Title, ContactText } from "./Contact.styled";
 
@@ -16,11 +16,7 @@ export const Contact = () => {
 					</ContactText>
 				</div>
 				<ContactForm />
-				<span className='contact-rings'>
-					<svg>
-						<use href={rings}></use>
-					</svg>
-				</span>
+				<Rings posTop='200px' posRight='' posBottom='' posLeft='-300px' />
 			</Container>
 		</ContactSection>
 	);

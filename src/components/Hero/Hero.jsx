@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "../Link/Link";
+import { Rings } from "../Rings/Rings";
 import Typed from "typed.js";
 
 import { HeroSection, Container, Title, Span, Intro, LinkWrapper } from "./Hero.styled";
@@ -36,17 +37,7 @@ export const Hero = () => {
 					<Link text={"Contact me"} href='#contact' />
 				</LinkWrapper>
 			</Container>
-			<span className='hero-rings'>
-				<svg xmlns='http://www.w3.org/2000/svg' width='530' height='129'>
-					<g fill='none' fillRule='evenodd' stroke='#FFF' opacity='.25'>
-						<ellipse cx='265' cy='40' rx='264.5' ry='39.5' />
-						<ellipse cx='265' cy='52' rx='264.5' ry='39.5' />
-						<ellipse cx='265' cy='65' rx='264.5' ry='39.5' />
-						<ellipse cx='265' cy='77' rx='264.5' ry='39.5' />
-						<ellipse cx='265' cy='89' rx='264.5' ry='39.5' />
-					</g>
-				</svg>
-			</span>
+			<Rings posTop='150px' posRight='' posBottom='' posLeft='-300px' />
 		</HeroSection>
 	);
 };

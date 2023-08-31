@@ -16,7 +16,7 @@ export const Contact = () => {
 					</ContactText>
 				</div>
 				<ContactForm />
-				<Rings posTop='200px' posRight='' posBottom='' posLeft='-300px' />
+				<Rings top='200px' right='' bottom='' left='-300px' />
 			</Container>
 		</ContactSection>
 	);

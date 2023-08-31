@@ -36,7 +36,7 @@ export const Skills = () => {
 					))}
 				</SkillsList>
 			</SkillsContainer>
-			<Rings posTop='' posRight='-300px' posBottom='40px' posLeft='' />
+			<Rings top='' right='-300px' bottom='40px' left='' />
 		</SkillsSection>
 	);
 };

@@ -25,7 +25,7 @@ export const Header = () => {
 	});
 
 	return (
-		<HeaderSection style={{ backgroundColor: `${isScrolled ? "#151515" : "transparent"}` }}>
+		<HeaderSection $isScrolled={isScrolled}>
 			<Container className='container'>
 				<Column>
 					<Title />

@@ -37,7 +37,7 @@ export const Hero = () => {
 					<Link text={"Contact me"} href='#contact' />
 				</LinkWrapper>
 			</Container>
-			<Rings posTop='150px' posRight='' posBottom='' posLeft='-300px' />
+			<Rings top='150px' right='' bottom='' left='-300px' />
 		</HeroSection>
 	);
 };

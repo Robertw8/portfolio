@@ -1,9 +1,9 @@
 import React from "react";
 import { RingsSpan } from "./Rings.styled";
 
-export const Rings = ({ posTop, posRight, posBottom, posLeft }) => {
+export const Rings = ({ top, right, bottom, left }) => {
 	return (
-		<RingsSpan style={{ top: `${posTop}`, right: `${posRight}`, bottom: `${posBottom}`, left: `${posLeft}` }}>
+		<RingsSpan $top={top} $right={right} $bottom={bottom} $left={left}>
 			<svg xmlns='http://www.w3.org/2000/svg' width='530' height='129'>
 				<g fill='none' fillRule='evenodd' stroke='#FFF' opacity='.25'>
 					<ellipse cx='265' cy='40' rx='264.5' ry='39.5' />

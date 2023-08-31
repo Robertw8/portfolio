@@ -15,6 +15,7 @@ const HeaderSection = styled.header`
 	z-index: 10;
 	/* box-shadow: 1px 5px 5px 0px rgba(255, 255, 255, 0.5); */
 	transition-duration: 150ms;
+	background-color: ${({ $isScrolled }) => ($isScrolled ? "#151515" : "transparent")};
 
 	@media screen and (max-width: 767px) {
 		position: static;

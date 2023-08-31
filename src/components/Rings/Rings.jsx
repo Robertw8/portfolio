@@ -1,5 +1,4 @@
 import React from "react";
-import rings from "../../assets/images/pattern-rings.svg";
 import { RingsSpan } from "./Rings.styled";
 
 export const Rings = ({ posTop, posRight, posBottom, posLeft }) => {

@@ -13,8 +13,7 @@ const HeaderSection = styled.header`
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	z-index: 10;
-	background-color: ${(props) => (props.$isScrolled ? "#151515" : "transparent")};
-	box-shadow: 1px 5px 5px 0px rgba(255, 255, 255, 0.5);
+	/* box-shadow: 1px 5px 5px 0px rgba(255, 255, 255, 0.5); */
 	transition-duration: 150ms;
 
 	@media screen and (max-width: 767px) {

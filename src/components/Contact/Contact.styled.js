@@ -4,7 +4,7 @@ const ContactSection = styled.section`
 	padding-top: 40px;
 	padding-bottom: 40px;
 	position: relative;
-	background-color: #242424;
+	background-color: transparent;
 
 	@media screen and (min-width: 768px) {
 		padding-top: 30px;

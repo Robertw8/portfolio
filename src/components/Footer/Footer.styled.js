@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const FooterSection = styled.footer`
-	padding-top: 0;
+	padding-top: 0 !important;
 	padding-bottom: 40px;
-	background-color: #242424;
+	background-color: #151515;
 	position: relative;
 	z-index: 100;
 

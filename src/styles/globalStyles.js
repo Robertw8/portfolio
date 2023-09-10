@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import SpaceGrotesk from "./../assets/fonts/SpaceGrotesk-Regular.ttf";
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url(${SpaceGrotesk}) format("truetype");
+  }
+
   *,
   *::before,
   *::after {

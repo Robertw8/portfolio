@@ -40,6 +40,12 @@ const GlobalStyles = createGlobalStyle`
   background-color: #151515;
   overflow: hidden;
   }
+
+  img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 `;
 
 export { GlobalStyles };

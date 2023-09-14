@@ -89,8 +89,6 @@ const SubmitButton = styled.button`
 `;
 
 const ValidationError = styled.span`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: calc(28 / 18);
 	color: #ff6f5b;

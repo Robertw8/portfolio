@@ -3,20 +3,31 @@ import { Link } from "../Link/Link";
 
 import {
 	Card,
+	ImageThumb,
 	Image,
 	Info,
 	ProjectTitle,
 	TechnologiesList,
 	TechnologiesItem,
 	LinksWrapper,
+	Overlay,
+	OverlayText,
 } from "./ProjectCard.styled";
 
-export const ProjectCard = ({ title, imageSrc, technologies, projectLink, codeLink }) => {
+export const ProjectCard = ({ title, imageSrc, technologies, projectLink, codeLink, info: { role, tasks, text } }) => {
 	return (
 		<Card>
-			<div>
+			<ImageThumb>
 				<Image src={imageSrc} alt={`${title} preview`} width='350' height='250' loading='lazy' />
-			</div>
+				<Overlay>
+					<OverlayText>
+						<strong style={{ color: "#4ee1a0" }}>Type:</strong> {role}
+					</OverlayText>
+					<OverlayText>
+						<strong style={{ color: "#4ee1a0" }}>Tasks:</strong> {tasks}
+					</OverlayText>
+				</Overlay>
+			</ImageThumb>
 			<Info>
 				<ProjectTitle>{title}</ProjectTitle>
 				<TechnologiesList>

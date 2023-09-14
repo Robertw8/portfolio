@@ -33,11 +33,8 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: bold;
 	font-size: 40px;
 	line-height: calc(56 / 48);
-	color: #ffffff;
 	letter-spacing: -1.5px;
 	text-align: center;
 	margin-top: 0;
@@ -65,8 +62,6 @@ const Span = styled.span`
 const Intro = styled.p`
 	margin-top: 20px;
 
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: calc(26 / 16);
 	color: #d9d9d9;
@@ -89,9 +84,5 @@ const LinkWrapper = styled.div`
 		margin-top: 50px;
 	}
 `;
-
-// const HeroLink = styled.a`
-// 	margin-top: 20px;
-// `;
 
 export { HeroSection, Container, Title, Span, Intro, LinkWrapper };

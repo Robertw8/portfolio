@@ -32,11 +32,8 @@ const Container = styled.div`
 `;
 
 const Title = styled.h2`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: bold;
 	font-size: 40px;
 	line-height: calc(56 / 48);
-	color: #ffffff;
 	letter-spacing: -1.5px;
 
 	@media screen and (min-width: 768px) {
@@ -56,8 +53,6 @@ const Title = styled.h2`
 `;
 
 const ContactText = styled.p`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: calc(28 / 18);
 	color: #d9d9d9;

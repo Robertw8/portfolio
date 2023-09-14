@@ -5,32 +5,49 @@ import webStudio from "../../assets/images/projects/web-studio.jpg";
 
 const projects = [
 	{
-		title: 'Team Project: "The Watch Spot" Landing page',
-		imageSrc: spot,
-		technologies: ["HTML/CSS", "JavaScript"],
-		projectLink: "https://gladja.github.io/team-project/",
-		codeLink: "https://github.com/Robertw8/the-watch-spot",
-	},
-	{
-		title: "Team Project: Tasty Treats",
+		title: "Tasty Treats",
 		imageSrc: treats,
 		technologies: ["HTML", "SCSS", "JavaScript", "REST API"],
 		projectLink: "https://robertw8.github.io/project-recipes/",
 		codeLink: "https://github.com/Robertw8/project-recipes",
+		info: {
+			role: "Team Project (Team Lead)",
+			tasks:
+				"Filters in catalog, much work with API, various fixes and features throughout the whole project in the process of assisting the teammates",
+		},
 	},
 	{
-		title: "Images Search using REST API",
+		title: "The Watch Spot",
+		imageSrc: spot,
+		technologies: ["HTML/CSS", "JavaScript"],
+		projectLink: "https://gladja.github.io/team-project/",
+		codeLink: "https://github.com/Robertw8/the-watch-spot",
+		info: {
+			role: "Team project (Developer)",
+			tasks: "Functionality of catalog, catalog modal window, mobile menu, theme toggle, on-scroll animations",
+		},
+	},
+	{
+		title: "Images Search",
 		imageSrc: images,
 		technologies: ["HTML/CSS", "JavaScript", "REST API"],
 		projectLink: "https://robertw8.github.io/goit-js-hw-11/",
 		codeLink: "https://github.com/Robertw8/goit-js-hw-11",
+		info: {
+			role: "Individual project",
+			tasks: "Working with API, pagination",
+		},
 	},
 	{
-		title: "The First Project: WebStudio Landing page",
+		title: "WebStudio Landing page",
 		imageSrc: webStudio,
 		technologies: ["HTML/CSS", "JavaScript"],
 		projectLink: "https://robertw8.github.io/web-studio/",
 		codeLink: "https://github.com/Robertw8/web-studio",
+		info: {
+			role: "Individual project",
+			tasks: "Responsive layout, modal window, mobile menu",
+		},
 	},
 ];
 

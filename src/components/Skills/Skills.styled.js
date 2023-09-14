@@ -40,11 +40,8 @@ const SkillsContainer = styled.div`
 `;
 
 const Title = styled.h2`
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: bold;
 	font-size: 40px;
 	line-height: calc(56 / 48);
-	color: #ffffff;
 	letter-spacing: -1.5px;
 
 	@media screen and (min-width: 768px) {

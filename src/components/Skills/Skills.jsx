@@ -1,15 +1,8 @@
 import React from "react";
 import { Rings } from "../Rings/Rings";
+import { SkillsItem } from "./SkillsItem/SkillsItem";
 
-import {
-	SkillsSection,
-	SkillsContainer,
-	SkillsList,
-	SkillsSeparation,
-	IconContainer,
-	Icon,
-	Title,
-} from "./Skills.styled";
+import { SkillsSection, SkillsContainer, SkillsList, Title } from "./Skills.styled";
 import { skills } from "./skillsData";
 
 export const Skills = () => {
@@ -19,20 +12,7 @@ export const Skills = () => {
 				<Title>Skills</Title>
 				<SkillsList>
 					{skills.map((skill, index) => (
-						<li key={index}>
-							<SkillsSeparation>
-								<IconContainer
-									href={skill.link}
-									className='icon-container'
-									target='_blank'
-									rel='noreferrer noopener nofollow'
-								>
-									<Icon width='100%' height='100%'>
-										<use href={skill.icon}></use>
-									</Icon>
-								</IconContainer>
-							</SkillsSeparation>
-						</li>
+						<SkillsItem name={skill.name} link={skill.link} icon={skill.icon} key={index} />
 					))}
 				</SkillsList>
 			</SkillsContainer>

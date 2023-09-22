@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "../Link/Link";
+import { Link } from "../../Link/Link";
 
 import {
 	Card,
@@ -36,8 +36,8 @@ export const ProjectCard = ({ title, imageSrc, technologies, projectLink, codeLi
 					))}
 				</TechnologiesList>
 				<LinksWrapper>
-					<Link text='View Project' href={projectLink} />
-					<Link text='View Code' href={codeLink} />
+					<Link text='View Project' href={projectLink} target='_blank' />
+					<Link text='View Code' href={codeLink} target='_blank' />
 				</LinksWrapper>
 			</Info>
 		</Card>

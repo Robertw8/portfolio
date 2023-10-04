@@ -1,54 +1,28 @@
-import images from "../../assets/images/projects/images.jpg";
-import spot from "../../assets/images/projects/spot.jpg";
-import treats from "../../assets/images/projects/treats.jpg";
-import webStudio from "../../assets/images/projects/web-studio.jpg";
-
-const projects = [
+export const projects = [
 	{
 		title: "Tasty Treats",
-		imageSrc: treats,
-		technologies: ["HTML", "SCSS", "JavaScript", "REST API"],
+		type: "Team project (Team Lead).",
+		description:
+			"Page with recipe search with theme toggle, various search filters, pagination, modal windows, with dynamic content rendering, animations and adding recipe to favorites logic. My tasks: search filters, in catalog, on-scroll animations, part of favorites page, help with modal windows and many other features and fixed throughout the whole project in the process of assisting the teammates.",
+		technologies: ["HTML", "SCSS", "JavaScript", "REST API", "Responsive Layout"],
 		projectLink: "https://robertw8.github.io/project-recipes/",
 		codeLink: "https://github.com/Robertw8/project-recipes",
-		info: {
-			role: "Team Project (Team Lead)",
-			tasks:
-				"Filters in catalog, much work with API, various fixes and features throughout the whole project in the process of assisting the teammates",
-		},
 	},
 	{
 		title: "The Watch Spot",
-		imageSrc: spot,
-		technologies: ["HTML/CSS", "JavaScript"],
+		type: "Team project.",
+		description:
+			"A landing page with wide functionality, including theme switch, selecting watch from catalog, slider, mobile menu, and modal window, scroll-up button, and obviously, beautiful animations. My tasks: modal window, mobile menu,catalog section, on-scroll animations and theme switch.",
+		technologies: ["HTML/CSS", "JavaScript", "Responsive Layout"],
 		projectLink: "https://gladja.github.io/team-project/",
 		codeLink: "https://github.com/Robertw8/the-watch-spot",
-		info: {
-			role: "Team project (Developer)",
-			tasks: "Functionality of catalog, catalog modal window, mobile menu, theme toggle, on-scroll animations",
-		},
 	},
 	{
-		title: "Images Search",
-		imageSrc: images,
-		technologies: ["HTML/CSS", "JavaScript", "REST API"],
-		projectLink: "https://robertw8.github.io/goit-js-hw-11/",
-		codeLink: "https://github.com/Robertw8/goit-js-hw-11",
-		info: {
-			role: "Individual project",
-			tasks: "Working with API, pagination",
-		},
-	},
-	{
-		title: "WebStudio Landing page",
-		imageSrc: webStudio,
-		technologies: ["HTML/CSS", "JavaScript"],
-		projectLink: "https://robertw8.github.io/web-studio/",
-		codeLink: "https://github.com/Robertw8/web-studio",
-		info: {
-			role: "Individual project",
-			tasks: "Responsive layout, modal window, mobile menu",
-		},
+		title: "Filmic explorer",
+		type: "Training project.",
+		description: "A small app about movies to improve routing and MUI skills.",
+		technologies: ["React", "React-Router", "Styled Components(Emotion)", "Material-UI", "JavaScript", "REST API"],
+		projectLink: "https://robertw8.github.io/filmic-explorer/",
+		codeLink: "https://github.com/Robertw8/filmic-explorer",
 	},
 ];
-
-export { projects };

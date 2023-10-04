@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCard } from "./ProjectCard/ProjectCard";
+import { ProjectCard } from "../ProjectCard/ProjectCard";
 
 import { ProjectsSection, ProjectsContainer, Title, ProjectsList } from "./Projects.styled";
 import { projects } from "./projectsData";

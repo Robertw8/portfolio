@@ -1,6 +1,6 @@
 import React from "react";
 import { Rings } from "../Rings/Rings";
-import { SkillsItem } from "./SkillsItem/SkillsItem";
+import { SkillsItem } from "../SkillsItem/SkillsItem";
 
 import { SkillsSection, SkillsContainer, SkillsList, Title } from "./Skills.styled";
 import { skills } from "./skillsData";

@@ -1,14 +1,15 @@
 import React from "react";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 
-import { ProjectsSection, ProjectsContainer, Title, ProjectsList } from "./Projects.styled";
+import { ProjectsSection, ProjectsContainer, ProjectsList } from "./Projects.styled";
+import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { projects } from "./projectsData";
 
 export const Projects = () => {
 	return (
 		<ProjectsSection id='projects'>
 			<ProjectsContainer>
-				<Title>Projects</Title>
+				<SectionTitle>Projects</SectionTitle>
 				<ProjectsList>
 					{projects.map((project, index) => (
 						<ProjectCard key={index} {...project} />

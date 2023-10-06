@@ -2,14 +2,15 @@ import React from "react";
 import { Rings } from "../Rings/Rings";
 import { SkillsItem } from "../SkillsItem/SkillsItem";
 
-import { SkillsSection, SkillsContainer, SkillsList, Title } from "./Skills.styled";
+import { SkillsSection, SkillsContainer, SkillsList } from "./Skills.styled";
+import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { skills } from "./skillsData";
 
 export const Skills = () => {
 	return (
 		<SkillsSection id='skills'>
 			<SkillsContainer>
-				<Title>Skills</Title>
+				<SectionTitle>Skills</SectionTitle>
 				<SkillsList>
 					{skills.map((skill, index) => (
 						<SkillsItem name={skill.name} link={skill.link} icon={skill.icon} key={index} />

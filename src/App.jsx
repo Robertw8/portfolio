@@ -8,13 +8,13 @@ import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 import { Background } from "./components/Background/Background";
 
-function App() {
+export const App = () => {
 	return (
 		<>
 			<GlobalStyles />
 			<Background />
 			<Header />
-			<main className='main'>
+			<main>
 				<Hero />
 				<Skills />
 				<Projects />
@@ -23,6 +23,4 @@ function App() {
 			<Footer />
 		</>
 	);
-}
-
-export default App;
+};

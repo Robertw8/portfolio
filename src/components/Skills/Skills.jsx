@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import { Rings } from "../Rings/Rings";
 import { SkillsItem } from "../SkillsItem/SkillsItem";
 
@@ -7,13 +7,15 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { skills } from "./skillsData";
 
 export const Skills = () => {
+	const id = useId();
+
 	return (
 		<SkillsSection id='skills'>
 			<SkillsContainer>
 				<SectionTitle>Skills</SectionTitle>
 				<SkillsList>
-					{skills.map((skill, index) => (
-						<SkillsItem name={skill.name} link={skill.link} icon={skill.icon} key={index} />
+					{skills.map((skill) => (
+						<SkillsItem key={id} {...skill} />
 					))}
 				</SkillsList>
 			</SkillsContainer>

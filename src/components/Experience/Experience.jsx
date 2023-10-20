@@ -13,15 +13,8 @@ export const Experience = () => {
 			<ExperienceContainer>
 				<SectionTitle>Experience</SectionTitle>
 				<ExperienceList>
-					{experienceData.map(({ period, title, name, text, responsibilities }) => (
-						<ExperienceItem
-							period={period}
-							title={title}
-							name={name}
-							text={text}
-							responsibilities={responsibilities}
-							key={id}
-						/>
+					{experienceData.map((item) => (
+						<ExperienceItem key={id} {...item} />
 					))}
 				</ExperienceList>
 			</ExperienceContainer>

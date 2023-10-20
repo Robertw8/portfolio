@@ -7,6 +7,9 @@ export const NavBar = () => {
 		<nav>
 			<NavList>
 				<li>
+					<Link href='#experience' text='Experience' target='_self' />
+				</li>
+				<li>
 					<Link href='#skills' text='Skills' target='_self' />
 				</li>
 				<li>
@@ -14,6 +17,9 @@ export const NavBar = () => {
 				</li>
 				<li>
 					<Link href='#contact' text='Contact' target='_self' />
+				</li>
+				<li>
+					<Link href='https://gold-mona-28.tiiny.site' text='CV' target='_blank' />
 				</li>
 			</NavList>
 		</nav>

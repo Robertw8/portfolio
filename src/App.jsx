@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects/Projects";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 import { Background } from "./components/Background/Background";
+import { Experience } from "./components/Experience/Experience.jsx";
 
 export const App = () => {
 	return (
@@ -16,6 +17,7 @@ export const App = () => {
 			<Header />
 			<main>
 				<Hero />
+				<Experience />
 				<Skills />
 				<Projects />
 				<Contact />

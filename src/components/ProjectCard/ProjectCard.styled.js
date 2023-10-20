@@ -4,6 +4,7 @@ const Card = styled.li`
 	background-color: #242424;
 	width: 300px;
 	box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 10px;

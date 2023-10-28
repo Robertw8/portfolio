@@ -7,6 +7,11 @@ export const skills = [
 		link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
 	},
 	{
+		name: "TypeScript",
+		icon: `${sprite}#icon-ts`,
+		link: "https://www.typescriptlang.org/",
+	},
+	{
 		name: "React",
 		icon: `${sprite}#icon-react`,
 		link: "https://reactjs.org/",

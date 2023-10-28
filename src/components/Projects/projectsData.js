@@ -9,6 +9,24 @@ export const projects = [
 		codeLink: "https://github.com/Robertw8/project-recipes",
 	},
 	{
+		title: "ContactHub",
+		type: "Training project.",
+		description:
+			"A contact storage app with authorization, asynchronous Redux and a a beautiful interface using Ant-design.",
+		technologies: [
+			"React",
+			"React-Router",
+			"Redux tookit",
+			"Styled Components",
+			"Ant-design",
+			"REST API",
+			"axios",
+			"react-particles",
+		],
+		projectLink: "https://robertw8.github.io/contact-hub/",
+		codeLink: "https://github.com/Robertw8/contact-hub",
+	},
+	{
 		title: "The Watch Spot",
 		type: "Team project.",
 		description:
@@ -21,7 +39,7 @@ export const projects = [
 		title: "Filmic explorer",
 		type: "Training project.",
 		description: "A small app about movies to improve routing and MUI skills.",
-		technologies: ["React", "React-Router", "Styled Components(Emotion)", "Material-UI", "JavaScript", "REST API"],
+		technologies: ["React", "React-Router", "Styled Components", "Material-UI", "REST API", "axios"],
 		projectLink: "https://robertw8.github.io/filmic-explorer/",
 		codeLink: "https://github.com/Robertw8/filmic-explorer",
 	},

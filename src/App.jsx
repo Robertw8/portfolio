@@ -10,19 +10,19 @@ import { Background } from "./components/Background/Background";
 import { Experience } from "./components/Experience/Experience.jsx";
 
 export const App = () => {
-	return (
-		<>
-			<GlobalStyles />
-			<Background />
-			<Header />
-			<main>
-				<Hero />
-				<Experience />
-				<Skills />
-				<Projects />
-				<Contact />
-			</main>
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <GlobalStyles />
+      <Background />
+      <Header />
+      <main>
+        <Hero />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
 };

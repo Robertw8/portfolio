@@ -5,12 +5,12 @@ import { FooterSection, FooterContainer } from "./Footer.styled";
 import { SocialsList } from "../SocialsList/SocialsList";
 
 export const Footer = () => {
-	return (
-		<FooterSection>
-			<FooterContainer>
-				<Title />
-				<SocialsList />
-			</FooterContainer>
-		</FooterSection>
-	);
+  return (
+    <FooterSection>
+      <FooterContainer>
+        <Title />
+        <SocialsList />
+      </FooterContainer>
+    </FooterSection>
+  );
 };

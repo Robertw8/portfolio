@@ -19,7 +19,12 @@ export const NavBar = () => {
 					<Link href='#contact' text='Contact' target='_self' />
 				</li>
 				<li>
-					<Link href='https://gold-mona-28.tiiny.site' text='CV' target='_blank' rel='noreferrer nofollow noopener' />
+					<Link
+						href='https://arsenii-brovchuk-cv.tiiny.site'
+						text='CV'
+						target='_blank'
+						rel='noreferrer nofollow noopener'
+					/>
 				</li>
 			</NavList>
 		</nav>

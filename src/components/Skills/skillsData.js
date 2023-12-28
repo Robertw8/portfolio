@@ -56,4 +56,19 @@ export const skills = [
     icon: `${sprite}#icon-git`,
     link: "https://git-scm.com/",
   },
+  {
+    name: "CS",
+    icon: `${sprite}#icon-cs`,
+    link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+  },
+  {
+    name: "nodejs",
+    icon: `${sprite}#icon-nodejs`,
+    link: "https://nodejs.org/docs/latest/api/",
+  },
+  {
+    name: "mongodb",
+    icon: `${sprite}#icon-mongodb`,
+    link: "https://www.mongodb.com/",
+  },
 ];
